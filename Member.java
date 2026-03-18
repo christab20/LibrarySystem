@@ -58,7 +58,15 @@ public class Member {
         return 0; // base class default (overridden in StudentMember or StaffMember)
     }
 
+ public void incrementBorrowedBooks() {
+        this.borrowedBooks++;
+    }
 
+    public void decrementBorrowedBooks() {
+        if (this.borrowedBooks > 0) {
+            this.borrowedBooks--;
+        }
+    }
     public String toString() {
         return 
                 "memberId=" + memberId +
@@ -68,3 +76,4 @@ public class Member {
                 '}';
     }
 }
+ 
