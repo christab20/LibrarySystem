@@ -7,7 +7,7 @@ public class MemberTest {
 
         // -------------------- TEST STUDENT MEMBER --------------------
         //Create a student member 101, "Alice", alice@example.com
-        StudentMember student = new StudentMember (101. "Alice", "alice@example.com , 0);
+        StudentMember student = new StudentMember (101,  "Alice", "alice@example.com" , 0);
         
         //Display the created student onject using toString()
 
@@ -25,7 +25,7 @@ public class MemberTest {
 
 
         System.out.println("Alice Smith");
-        System.out.println("alice.smith@example.com);
+        System.out.println("alice.smith@example.com");
 
         
         // Display updated student details
