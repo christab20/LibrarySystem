@@ -1,56 +1,45 @@
 package com.mycompany.lms;
- 
+
 // Book.java
-//It extends the LibraryItems, iclues title, item id and shows availability 
+// It extends LibraryItem, includes title, item id and shows availability
 public class Book extends LibraryItem {
-    //Variable to store the author of the book
+
+    // Variable to store the author of the book
     private String author;
-    //Variable to store the ISBN number of the book
+
+    // Variable to store the ISBN number of the book
     private String isbn;
-    Book
- 
+
+    // Constructor to create a Book object
     public Book(String title, boolean available, int itemId, String author, String isbn) {
         super(title, available, itemId);
-        // Constructor implementation
-    }   //This is used to create a new book object.
-    //Parameters
-    //Title of the book 
-    //Show if the book is available or not 
-    //Unique Id for a book 
-    //Author of the book 
-    //The IBSN number of the Book
- 
-    public Book(String title, boolean available, int itemId, String author, String isbn) {
-        //Calls the constructor of the LibraryItem
-        super(title, available, itemId);
-        //Give value to the to the book specific characters
         this.author = author;
         this.isbn = isbn;
     }
-    //Getter method for the author 
-    //Returns the author of the book
+
+    // Getter method for the author
     public String getAuthor() {
-        // Getter implementation
-        return author ;
+        return author;
     }
- 
-    //Setter methods for the author 
-    //allows to update the author of the book
+
+    // Setter method for the author
     public void setAuthor(String author) {
         this.author = author;
     }
-//Getter methods for ISBN
-    //RETURNS THE ISBN number of the book
+
+    // Getter method for ISBN
     public String getIsbn() {
-        this.isbn = isbn;
-        return null;
+        return isbn;
     }
-    //toString method
-    //this method returns a string representation of the  book object
-    //including its details
+
+    // Setter method for ISBN 
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    // toString method
     @Override
     public String toString() {
-        // toString implementation
         return "Book{" +
                "title='" + getTitle() + '\'' +
                ", available=" + isAvailable() +
