@@ -19,7 +19,22 @@ public class StudentMember extends Member {
         this.maxBooks = maxBooks;
     }
     
-    
+      @Override
+    public void incrementBorrowedBooks() {
+        if (getBorrowedBooks() < maxBooks) {
+            super.incrementBorrowedBooks();
+        } else {
+            System.out.println("Cannot borrow more books! Limit reached.");
+        }
+    }
+      
+      @Override
+    public void decrementBorrowedBooks() {
+        if (getBorrowedBooks() > 0) {
+            super.decrementBorrowedBooks();
+        }
+    }
+
    
     
     
