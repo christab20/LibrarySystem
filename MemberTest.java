@@ -7,7 +7,7 @@ public class MemberTest {
 
         // -------------------- TEST STUDENT MEMBER --------------------
         //Create a student member 101, "Alice", alice@example.com
-        StudentMmeber student = new StudentMember (101. "Alice", "alice@example.com , 0);
+        StudentMember student = new StudentMember (101. "Alice", "alice@example.com , 0);
         
         //Display the created student onject using toString()
 
