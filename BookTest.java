@@ -12,7 +12,6 @@ public class Book extends LibraryItem {
     private String isbn;
 
     // Constructor to create a Book object
-    //Parameters:
     //title - the name of the book
     // availiable - indicates if the book is currently available (true/false)
     // itemId - unique identifier for the book
