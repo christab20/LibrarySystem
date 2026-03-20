@@ -5,7 +5,7 @@ public class LibraryItemTest {
     public static void main(String[] args) {
 
         // Create a LibraryItem instance
-        // Parameters: title, availability, itemId
+        // title, availability, itemId
         LibraryItem item = new LibraryItem("Generic Item", true, 1001);
 
         System.out.println("=== LibraryItem Test ===");
