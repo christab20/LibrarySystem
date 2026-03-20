@@ -1,16 +1,23 @@
 package com.mycompany.lms;
-// Loan.java 
+
+
+// Loan.java
+// This class represents a loan transaction between a Member and a Book
+// It handles borrowing logic such as availability checks and borrowing limits
 public class Loan { 
+    // The member who is borrowing the book
     private Member member; 
+    // The book being borrowed
     private Book book; 
 
     // Constructor
+    // Creates a loan and applies validation rules
     public Loan(Member member, Book book) { 
-         // Check if the book is available
+         // Check if the book is available before allowing the loan
         if (!book.isAvailable()) {
             throw new IllegalStateException("Book is not available.");  
     } 
-  // Check if member can borrow more books
+  // Check if the member has reached their borrowing limit
         if (member.getBorrowedBooks() >= member.getMaxBooks()) {
             throw new IllegalStateException("Borrow limit reached.");
         }
@@ -39,6 +46,8 @@ public class Loan {
                ", Book=" + book.getTitle();
     }
 
+     // toString method
+    // Returns a string representation of the Loan object
     @Override
     public String toString() {
         return "Loan{" +
