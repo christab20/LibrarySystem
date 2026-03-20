@@ -15,7 +15,6 @@ public class Member {
     private int borrowedBooks;
 
    //Constructor to initiaize all member fields
-    // Parameters:
     // memberId - unique identifier for the member
     // name - name of the member
     // email - email address of the member
