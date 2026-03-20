@@ -1,7 +1,4 @@
 package com.mycompany.lms;
-
-
-
 // StaffMember.java
 //This class represents a staff member in the library system 
 // It extends the Member class and defines a higher borrowing limit
