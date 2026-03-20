@@ -10,7 +10,6 @@ public class StudentMember extends Member {
     private int maxBooks = 5;
 
     // Constructor to create a StudentMember object
-    // Parameters:
     // memberId - unique ID of the member
     // name - name of the member
     // email - email of the member
