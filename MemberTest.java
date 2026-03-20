@@ -27,10 +27,8 @@ public class MemberTest {
 
 
         // Test setter methods (update name and email)
-
-
-        System.out.println("Alice Smith");
-        System.out.println("alice.smith@example.com");
+        student.setName("Alice Smith");
+        student.setEmail("alice.smith@example.com");
 
         
         // Display updated student details
