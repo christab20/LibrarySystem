@@ -1,12 +1,17 @@
 package com.mycompany.lms;
 
+//MemberTest.java
+//This class is used to test the functionality of Member,StudentMember, and StaffMmember classes
 
 public class MemberTest {
     public static void main(String[] args) {
+        
+        //Display heading for test output 
         System.out.println("=== Member Class Tests ===");
 
         // -------------------- TEST STUDENT MEMBER --------------------
-        //Create a student member 101, "Alice", alice@example.com
+        //Create a StudentMember object 
+        //memberID = 101, name = "Alice", email = alice@example.com, borrowedBooks = 0 
         StudentMember student = new StudentMember (101,  "Alice", "alice@example.com" , 0);
         
         //Display the created student onject using toString()
@@ -21,7 +26,7 @@ public class MemberTest {
         System.out.println("Borrow Limit: " + student.getMaxBooks());
 
 
-        // Test setters setName Alice Smith, email alice.smith@example.com
+        // Test setter methods (update name and email)
 
 
         System.out.println("Alice Smith");
@@ -79,7 +84,8 @@ public class MemberTest {
         for (int i = 0; i < 5; i++) {
             staff.incrementBorrowedBooks();
         }
-
+        
+        //Display number of borrwed books 
         System.out.println("Borrowed Books: " + staff.getBorrowedBooks()); // Expected: 5
 
         // Test returning books
@@ -87,9 +93,11 @@ public class MemberTest {
         for (int i = 0; i < 3; i++) {
             staff.decrementBorrowedBooks();
         }
-
+    
+        //Display updated number of borrwed books 
         System.out.println("Borrowed Books: " + staff.getBorrowedBooks()); // Expected: 2
-
+    
+        //End of test
         System.out.println("\n=== Member Tests Completed ===");
     }
 }
