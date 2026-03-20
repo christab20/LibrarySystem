@@ -1,68 +1,44 @@
 package com.mycompany.lms;
+//Insert package name
+
+/**
+ *
+ * @author Student Name
+ */
 public class BookTest {
+    public static void main(String[] args) {
+        System.out.println("=== Book Test ===");
 
-// Book.java
-// It extends LibraryItem, includes title, item id and shows availability
-public class Book extends LibraryItem {
+        // Create a Book instance  BOO1, Java Programming, J. Smith, 12345
 
-    // Variable to store the author of the book
-    private String author;
 
-    // Variable to store the ISBN number of the book
-    private String isbn;
+        // Print initial state
+        System.out.println("Initial Book: " + book);
 
-    // Constructor to create a Book object
-    //title - the name of the book
-    // availiable - indicates if the book is currently available (true/false)
-    // itemId - unique identifier for the book
-    //author - name of the author
-    //isbn - ISBN number of the book
-    public Book(String title, boolean available, int itemId, String author, String isbn) {
-        //Calls the constructor of the parent class (LibraryItem)
-        super(title, available, itemId);
+        // Borrow the book
+        System.out.println("\nBorrowing the book...");
+        if (book.isAvailable()) {
+            //Set book availabilty to false 
 
-        //Assign values to Book - specific attributes 
-        this.author = author;
-        this.isbn = isbn;
-    }
+            System.out.println("Book borrowed successfully.");
+        } else {
+            System.out.println("Book is not available to borrow.");
+        }
+
+        // Attempt to borrow again (should fail)
+        System.out.println("\nAttempting to borrow again...");
  
-    // Getter method for the author
-    //Returns the name of the autor
-    public String getAuthor() {
-        return author;
-    }
+        //Insert code to check if book is not available
+        //Output "Book is already on loan." 
 
-    // Setter method for the author
-    //Allows updating the author's name 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
 
-    // Getter method for ISBN
-    //Returns the ISBN number of the book
-    public String getIsbn() {
-        return isbn;
-    }
+        // Return the book
+        System.out.println("\nReturning the book...");
+        //Set book availabilty to true 
 
-    // Setter method for ISBN 
-    //Allows uodating the ISBN number
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
+        System.out.println("Book returned successfully.");
 
-    // toString method
-    //Returns a string representation of the Book object
-    //Includes a;ll important details of the book
-    @Override
-    public String toString() {
-        return "Book{" +
-               "title='" + getTitle() + '\'' +
-               ", available=" + isAvailable() +
-               ", itemId=" + getItemId() +
-               ", author='" + author + '\'' +
-               ", isbn='" + isbn + '\'' +
-               '}';
+        // Final state
+        System.out.println("\nFinal Book: " + book);
     }
-}   
 }
-
