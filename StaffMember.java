@@ -8,7 +8,6 @@ public class StaffMember extends Member {
     private int maxBooks = 10;
 
     // Constructor to create a StaffMember object
-    // Parameters:
     // memberId - unique ID of the member
     // name - name of the member
     // email - email address of the member
