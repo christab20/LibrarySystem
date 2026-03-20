@@ -57,10 +57,6 @@ public class StudentMember extends Member {
         }
     }
 
-   
-    
-    
-
     @Override
     public String toString() {
 //        return "StudentMember{" +
