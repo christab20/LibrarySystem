@@ -1,0 +1,228 @@
+// Loan.java
+public class Loan {
+    private Member member;
+    private Book book;
+
+    public Loan(Member member, Book book) {
+        // Constructor implementation
+    }
+
+    public Member getMember() {
+        // Getter implementation
+        return null;
+    }
+
+    public void setMember(Member member) {
+        // Setter implementation
+    }
+
+    public Book getBook() {
+        // Getter implementation
+        return null;
+    }
+
+    public void setBook(Book book) {
+        // Setter implementation
+    }
+
+    public String getLoanDetails() {
+        // Method implementation
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        // toString implementation
+        return null;
+    }
+}
+
+// StaffMember.java
+public class StaffMember extends Member {
+    private int maxBooks = 10;
+
+    public StaffMember(int memberId, String name, String email, int borrowedBooks) {
+        super(memberId, name, email, borrowedBooks);
+        // Constructor implementation
+    }
+
+    public int getMaxBooks() {
+        // Getter implementation
+        return 0;
+    }
+
+    public void setMaxBooks(int maxBooks) {
+        // Setter implementation
+    }
+
+    @Override
+    public String toString() {
+        // toString implementation
+        return null;
+    }
+}
+
+// StudentMember.java
+public class StudentMember extends Member {
+    private int maxBooks = 5;
+
+    public StudentMember(int memberId, String name, String email, int borrowedBooks) {
+        super(memberId, name, email, borrowedBooks);
+        // Constructor implementation
+    }
+
+    public int getMaxBooks() {
+        // Getter implementation
+        return 0;
+    }
+
+    public void setMaxBooks(int maxBooks) {
+        // Setter implementation
+    }
+
+    @Override
+    public String toString() {
+        // toString implementation
+        return null;
+    }
+}
+
+// Member.java
+public class Member {
+    private int memberId;
+    private String name;
+    private String email;
+    private int borrowedBooks;
+
+    public Member(int memberId, String name, String email, int borrowedBooks) {
+        // Constructor implementation
+    }
+
+    public int getMemberId() {
+        // Getter implementation
+        return 0;
+    }
+
+    public void setMemberId(int memberId) {
+        // Setter implementation
+    }
+
+    public String getName() {
+        // Getter implementation
+        return null;
+    }
+
+    public void setName(String name) {
+        // Setter implementation
+    }
+
+    public String getEmail() {
+        // Getter implementation
+        return null;
+    }
+
+    public void setEmail(String email) {
+        // Setter implementation
+    }
+
+    public int getBorrowedBooks() {
+        // Getter implementation
+        return 0;
+    }
+
+    public void setBorrowedBooks(int borrowedBooks) {
+        // Setter implementation
+    }
+
+    public int calculateBorrowLimit() {
+        // Method implementation
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        // toString implementation
+        return null;
+    }
+}
+
+// Book.java
+public class Book extends LibraryItem {
+    private String author;
+    private String isbn;
+
+    public Book(String title, boolean available, int itemId, String author, String isbn) {
+        super(title, available, itemId);
+        // Constructor implementation
+    }
+
+    public String getAuthor() {
+        // Getter implementation
+        return null;
+    }
+
+    public void setAuthor(String author) {
+        // Setter implementation
+    }
+
+    public String getIsbn() {
+        // Getter implementation
+        return null;
+    }
+
+    public void setIsbn(String isbn) {
+        // Setter implementation
+    }
+
+    @Override
+    public String toString() {
+        // toString implementation
+        return null;
+    }
+}
+
+// LibraryItem.java
+public class LibraryItem {
+    private String title;
+    private boolean available;
+    private int itemId;
+
+    public LibraryItem(String title, boolean available, int itemId) {
+        // Constructor implementation
+    }
+
+    public String getTitle() {
+        // Getter implementation
+        return null;
+    }
+
+    public void setTitle(String title) {
+        // Setter implementation
+    }
+
+    public boolean isAvailable() {
+        // Getter implementation
+        return false;
+    }
+
+    public void setAvailable(boolean available) {
+        // Setter implementation
+    }
+
+    public int getItemId() {
+        // Getter implementation
+        return 0;
+    }
+
+    public void setItemId(int itemId) {
+        // Setter implementation
+    }
+
+    @Override
+    public String toString() {
+        // toString implementation
+        return null;
+    }
+}
+
+
