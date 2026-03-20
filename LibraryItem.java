@@ -12,8 +12,8 @@ public class LibraryItem {
     // Constructor
     public LibraryItem(String title, boolean available, int itemId) {
         this.title = title;
-        this.available = available; // fixed spelling
-        this.itemId = itemId;       // fixed semicolon
+        this.available = available; 
+        this.itemId = itemId;       
     }
 
     public String getTitle() {
