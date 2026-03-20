@@ -1,9 +1,4 @@
 package com.mycompany.lms;
-
-/**
- *
- * @author ChristaBobymon
- */
 // Loan.java 
 public class Loan { 
     private Member member; 
